@@ -2,7 +2,7 @@
 export const Person = ({ person }) => {
   const { name, age, partnerName, sex } = person;
   const hasAge = age !== undefined;
-  const isMarried = partnerName !== undefined;
+  const isMarried = Boolean(partnerName);
   let partnerLabel;
 
   if (sex === 'm') {
