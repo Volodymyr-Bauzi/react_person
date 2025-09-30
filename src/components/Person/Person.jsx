@@ -1,8 +1,7 @@
 // export const Person = ({ person }) => ();
 export const Person = ({ person }) => {
-  const { name, age, partnerName, sex } = person;
+  const { name, age, partnerName, sex, isMarried } = person;
   const hasAge = age !== undefined;
-  const isMarried = partnerName !== undefined;
   const partnerLabel = sex === 'm' ? 'wife' : 'husband';
   const partnerMessage = isMarried
     ? `${partnerName} is my ${partnerLabel}`
