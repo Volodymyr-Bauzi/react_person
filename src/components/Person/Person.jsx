@@ -1,7 +1,7 @@
 // export const Person = ({ person }) => ();
 export const Person = ({ person }) => {
   const { name, age, partnerName, sex } = person;
-  const hasAge = age !== undefined;
+  const hasAge = age !== undefined && age !== null;
   const isMarried = Boolean(partnerName);
   let partnerLabel;
 
